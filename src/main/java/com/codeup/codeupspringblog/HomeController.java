@@ -6,10 +6,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class HomeController {
-    //Method will listen for GET requests at /hello
-    @GetMapping("/")
-    @ResponseBody
+    //Method will listen for GET requests at /home
+    @GetMapping("/home")
     public String home() {
-        return "This is the landing page!";
+        return "home";
     }
 }
